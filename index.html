@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="TEORA Café & Takeaway — comforting bites, café favourites and easy WhatsApp enquiries.">
+<meta name="theme-color" content="#244638">
+<title>TEORA | Café & Takeaway</title>
+<style>
+:root{--green:#244638;--dark:#173126;--cream:#fbf6ec;--orange:#d87945;--gold:#e9bd78;--ink:#262923;--muted:#6d7168;--line:#e8dfd0;--white:#fffdf8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:var(--white)}
+.wrap{width:min(1120px,calc(100% - 36px));margin:auto}.top{background:var(--dark);color:#fff5e5;text-align:center;padding:8px 12px;font-size:12px;letter-spacing:.04em}
+header{position:sticky;top:0;background:#fffdf8f2;backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:5}.nav{display:flex;justify-content:space-between;align-items:center;min-height:76px;gap:18px}
+.brand{display:flex;gap:10px;align-items:center;text-decoration:none;color:var(--green)}.mark{background:var(--green);color:var(--cream);border-radius:50% 50% 50% 12%;width:42px;height:42px;display:grid;place-items:center;font:28px Georgia}.brand strong{letter-spacing:.18em}.brand small{display:block;font-size:10px;letter-spacing:.16em;color:var(--muted)}
+nav{display:flex;align-items:center;gap:22px}nav a{color:var(--ink);text-decoration:none;font-weight:bold;font-size:14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 19px;border-radius:30px;background:var(--green);color:white;text-decoration:none;font-weight:bold;border:1px solid var(--green);transition:.2s}.btn:hover{background:var(--dark);transform:translateY(-1px)}.btn.alt{background:transparent;color:var(--green)}.btn.alt:hover{background:var(--green);color:white}
+.hero{background:var(--cream)}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center;padding:64px 0;min-height:550px}
+.eyebrow{text-transform:uppercase;letter-spacing:.18em;color:var(--orange);font-size:12px;font-weight:800}
+h1,h2{font-family:Georgia,'Times New Roman',serif;font-weight:normal;letter-spacing:-.04em;line-height:1.05}h1{font-size:clamp(48px,7vw,82px);margin:18px 0}h1 em{color:var(--orange)}h2{font-size:clamp(36px,4vw,54px);margin:12px 0 18px}
+.lead{font-size:18px;color:var(--muted);max-width:550px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}.note{font-size:13px;color:var(--muted)}
+.art{position:relative;display:grid;place-items:center;min-height:390px}.sun{position:absolute;width:82%;aspect-ratio:1;background:var(--gold);border-radius:50%;opacity:.75}.plate{position:relative;width:84%;aspect-ratio:1;border:14px solid white;border-radius:50%;background:#f5e7ce;box-shadow:0 20px 50px #24463820;display:grid;place-items:center;font-size:clamp(100px,14vw,165px);transform:rotate(-7deg)}
+.tag{position:absolute;background:white;padding:13px 16px;border-radius:14px;box-shadow:0 12px 35px #24463820;font-weight:bold;font-size:14px}.tag small{display:block;color:var(--muted);font-weight:normal}.tag.one{top:8%;left:0;transform:rotate(-5deg)}.tag.two{bottom:7%;right:0;transform:rotate(4deg)}
+section{padding:78px 0}.heading{text-align:center;max-width:690px;margin:0 auto 38px}.heading p,.card p,.story p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{border:1px solid var(--line);border-radius:22px;padding:26px;background:white}.icon{font-size:30px;background:var(--cream);width:54px;height:54px;border-radius:15px;display:grid;place-items:center;margin-bottom:18px}.card h3{margin-bottom:8px}
+.menu{background:#f5f0e6}.menu-card{padding:0;overflow:hidden}.food{height:160px;display:grid;place-items:center;background:#f2dfbf;font-size:68px}.menu-card:nth-child(2) .food{background:#e6ead7}.menu-card:nth-child(3) .food{background:#f4d9c9}.menu-card .inner{padding:22px}.disclaimer{text-align:center;color:var(--muted);font-size:13px;margin:24px auto 0}
+.order{background:#fff}.order-box{max-width:860px;margin:auto;padding:34px;border:1px solid var(--line);border-radius:24px;background:var(--cream);display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center}.order-box p{color:var(--muted);margin-bottom:0}
+.story-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}.story-art{min-height:320px;border-radius:28px;background:var(--green);color:var(--cream);display:grid;place-items:center;font:120px Georgia;position:relative;overflow:hidden}.story-art:before,.story-art:after{content:"";position:absolute;border:1px solid #ffffff40;border-radius:50%;width:280px;height:280px}.story-art:after{width:370px;height:370px}
+.contact{background:var(--green);color:var(--cream)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.contact p{color:#d7e0d7}.panel{background:#fffdf8;color:var(--ink);padding:28px;border-radius:22px}.line{padding:13px 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}.line:last-child{border:0}.label{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.1em}
+footer{background:var(--dark);color:#d7e0d7;padding:24px 0;font-size:13px}.foot{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:760px){nav{gap:12px}nav a:not(.btn){display:none}.hero-grid,.story-grid,.contact-grid{grid-template-columns:1fr}.hero-grid{padding:48px 0}.art{min-height:300px}.cards{grid-template-columns:1fr}.story-grid{gap:30px}.story-art{min-height:250px}.order-box{grid-template-columns:1fr}section{padding:58px 0}.foot{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="top">TEORA Café & Takeaway · Fresh cravings, easy pick-up · Opening details coming soon</div>
+<header><div class="wrap nav">
+<a class="brand" href="#home" aria-label="TEORA home"><span class="mark">T</span><span><strong>TEORA</strong><small>CAFÉ · TAKEAWAY · TREATS</small></span></a>
+<nav><a href="#menu">Menu ideas</a><a href="#story">About TEORA</a><a class="btn" href="#order">Order enquiry ↗</a></nav>
+</div></header>
+<main>
+<section class="hero" id="home" style="padding:0"><div class="wrap hero-grid">
+<div><div class="eyebrow">Good food. Good mood.</div><h1>Your café moment,<br>ready to <em>take away.</em></h1>
+<p class="lead">Meet TEORA — a café and takeaway concept for comforting bites, refreshing drinks, and little treats that make an ordinary day feel better.</p>
+<div class="actions"><a class="btn" href="#menu">Explore menu ideas ↓</a><a class="btn alt" href="#order">Ask about an order</a></div>
+<div class="note">We're getting ready. Final menu, location and opening hours will be announced soon.</div></div>
+<div class="art" aria-label="Cafe-themed illustration"><div class="sun"></div><div class="tag one">Made for your day<small>Good things, to go</small></div><div class="plate">☕</div><div class="tag two">A little bite of joy<small>The TEORA way</small></div></div>
+</div></section>
+
+<section id="offerings"><div class="wrap"><div class="heading"><div class="eyebrow">The TEORA experience</div><h2>Quick pick-up. Feel-good flavours.</h2><p>Whether you're grabbing a drink, picking up a snack, or treating yourself, TEORA is being planned around easy, welcoming food moments.</p></div>
+<div class="cards">
+<article class="card"><div class="icon">☕</div><h3>Café drinks</h3><p>Coffee, tea, and refreshing drinks for a morning boost or an afternoon break.</p></article>
+<article class="card"><div class="icon">🥪</div><h3>Fresh bites</h3><p>Easy-to-enjoy sandwiches, wraps, savoury snacks, and takeaway favourites.</p></article>
+<article class="card"><div class="icon">🍰</div><h3>Sweet treats</h3><p>Cakes, pastries, cookies, and little desserts to brighten your day.</p></article>
+</div></div></section>
+
+<section class="menu" id="menu"><div class="wrap"><div class="heading"><div class="eyebrow">Menu preview</div><h2>Your next favourite might be here.</h2><p>These are sample categories to shape the website. The final menu and prices will be added when TEORA's offering is confirmed.</p></div>
+<div class="cards">
+<article class="card menu-card"><div class="food">☕</div><div class="inner"><h3>Sips & coolers</h3><p>Hot and chilled drinks, classic favourites, and refreshing options.</p></div></article>
+<article class="card menu-card"><div class="food">🥪</div><div class="inner"><h3>Grab-and-go bites</h3><p>Handheld snacks and satisfying bites designed for takeaway.</p></div></article>
+<article class="card menu-card"><div class="food">🥐</div><div class="inner"><h3>Bakery & desserts</h3><p>Sweet and savoury treats for a quick pick-up or a shared moment.</p></div></article>
+</div><p class="disclaimer">Illustrative menu only—not a confirmed product list. Add real products, ingredients, allergen details, prices and availability before launch.</p></div></section>
+
+<section class="order" id="order"><div class="wrap"><div class="order-box"><div><div class="eyebrow">Easy enquiries</div><h2 style="font-size:36px;margin:10px 0">Want to order from TEORA?</h2><p>When you're ready to accept orders, customers will be able to message you on WhatsApp to ask about the menu, availability and pick-up details.</p><p style="font-size:13px;margin-top:12px">WhatsApp ordering will work once you add your business number below.</p></div><a class="btn" href="#contact">Set up contact details ↗</a></div></div></section>
+
+<section id="story"><div class="wrap story-grid"><div class="story-art">T.</div><div class="story"><div class="eyebrow">A new beginning</div><h2>Good food should fit your day.</h2><p>TEORA is being built around a simple idea: good food and warm service can make everyday moments special. Our café and takeaway concept is taking shape, and we'll share the menu, location, and launch news here.</p><p>Follow along as we get ready to serve our first customers.</p><a class="btn" href="#contact">Contact TEORA ↗</a></div></div></section>
+
+<section class="contact" id="contact"><div class="wrap contact-grid"><div><div class="eyebrow" style="color:var(--gold)">Stay connected</div><h2>Let's make your next bite a TEORA moment.</h2><p>For launch updates, menu questions, supplier enquiries, or collaborations, use the contact details below once they're final.</p></div>
+<div class="panel"><div class="line"><span class="label">Email</span><a href="mailto:YOUR_EMAIL@gmail.com">YOUR_EMAIL@gmail.com</a></div><div class="line"><span class="label">WhatsApp / Phone</span><strong>ADD YOUR BUSINESS NUMBER</strong></div><div class="line"><span class="label">Location</span><strong>Location to be announced</strong></div><div class="line"><span class="label">Opening hours</span><strong>Coming soon</strong></div></div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> TEORA. All rights reserved.</span><span>Café · Takeaway · Treats</span><a href="#home" style="color:inherit;text-decoration:none">Back to top ↑</a></div></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body></html>
